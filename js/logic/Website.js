@@ -4,10 +4,10 @@ function Weblite() {
     'div',
     {
       style: {
-        height: '90%',
+        height: 'auto',
         overflow: 'auto',
+        flex: '1',
       },
-      className: 'weblite-1',
     },
     e(g.Displays),
   );

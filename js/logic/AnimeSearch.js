@@ -13,7 +13,7 @@ function InputSearch() {
     {
       style: {
         width: '100%',
-        height: '8vh',
+        height: 'clamp(40px, 8vh, 60px)',
         border: 'none',
         ...border8,
         outline: 'none',
@@ -21,7 +21,6 @@ function InputSearch() {
       },
       type: 'search',
       placeholder: 'Введіть назву аніме...',
-      className: 'input-search',
       onKeyDown: handleKeyDown,
     },
     

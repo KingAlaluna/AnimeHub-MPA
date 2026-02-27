@@ -6,16 +6,14 @@ function TopBanner() {
         ...border1,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        height: '10%',
+        height: 'clamp(60px, 10vh, 90px)',
         backgroundImage: 'var(--gradient-16), linear-gradient(var(--color-fff), var(--color-fff)), var(--gradient-17)',
         boxShadow: '0 0 2.5vh 2.5vh var(--color-1)',
         zIndex: '1',
       },
-      className: 'panel-1',
     },
     e(LogoPanel),
     e(BtnPanel),
-    //e(InputSearch),
   );
 }
 
@@ -49,7 +47,7 @@ function BtnPanel() {
     e(Button1, {className: 'fa-home', className2: 'button1', onClick: () => {
       location.href = 'index.html';
     }}),
-    e(Button1, {className: 'fa-sliders-h', className2: 'button1', noNewFav: true, onClick: () => {
+    e(Button1, {className: 'fa-sliders-h', className2: 'button1', onClick: () => {
       location.href = 'filter.html';
     }}),
     e(Button8, {className: 'fa-heart', className2: 'button1', onClick: () => {
@@ -66,7 +64,7 @@ function BtnPanel() {
 
 function LogoImg() {
   return e(
-    'button',
+    'div',
     {
       style: {
         ...button1,

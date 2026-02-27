@@ -11,16 +11,8 @@ function Button1(props) {
       },
       onClick: () => {
         props.onClick?.() || null;
-        g.setIsActBtn(props.className);
-        g.setIsAnimeUrl('https://api.jikan.moe/v4/anime');
-        if (!props.noNewFav) {
-          arrayGenres.length = 0;
-          arrayTypes.length = 0;
-          arrayYears.length = 0;
-          arrayStudios.length = 0;
-        }
       },
-      className: 'fa-solid ' + props.className + ' ' + (props.className2 ? props.className2 : '') || null,
+      className: `fa-solid ${props.className} ${(props.className2 ? props.className2 : '') || ''}`,
     },
     props.svg || null,
   );
@@ -49,7 +41,6 @@ function Button3(props) {
         ...button3,
       },
       onClick: props.onClick || null,
-      className: 'button-2',
     },
     props.text,
   );
@@ -63,14 +54,14 @@ function Button4(props) {
         ...button3,
         ...title2,
         backgroundImage: props.aniFavourite ? 'var(--gradient-15), var(--gradient-13)' : 'var(--gradient-14), var(--gradient-12)',
-        fontSize: '3vh',
-        height: '5vh',
+        fontSize: 'clamp(20px, 3vh, 40px)',
+        height: 'clamp(30px, 5vh, 50px)',
         width: props.width || '90%',
       },
       onClick: () => {
         props.onClick?.() || null;
       },
-      className: `button-4 fa-solid fa-heart`,
+      className: `fa-solid fa-heart`,
     },
     
   );
@@ -86,6 +77,10 @@ function Button6(props) {
       style: {
         ...button3,
         background: props.isAc ? (g[`is${props.isAc}`] == props.text && g[`is${props.isAc}2`] == true ? 'var(--gradient-8)' : 'var(--gradient-5)') : (isActive ? 'var(--gradient-8)' : 'var(--gradient-5)'),
+        padding: 'clamp(5px, 1vmin, 10px)',
+        minHeight: 'clamp(35px, 5vh, 50px)',
+        height: 'auto',
+        maxHeight: 'max-content',
       },
       onClick: () => {
         props.isAc ? (g[`setIs${props.isAc}`](props.text)) : (setIsActive(!isActive));
@@ -128,14 +123,6 @@ function Button8(props) {
       },
       onClick: () => {
         props.onClick?.() || null;
-        g.setIsActBtn(props.className);
-        g.setIsAnimeUrl('https://api.jikan.moe/v4/anime');
-        if (!props.noNewFav) {
-          arrayGenres.length = 0;
-          arrayTypes.length = 0;
-          arrayYears.length = 0;
-          arrayStudios.length = 0;
-        }
       },
       className: 'fa-solid ' + props.className + ' ' + (props.className2 ? props.className2 : '') || null,
     },
@@ -693,13 +680,12 @@ function Pagination1() {
     'div',
     {
       style: {
-        height: '10vh',
-        padding: '0 20vw 0 20vw',
+        height: 'clamp(60px, 10vh, 90px)',
+        padding: '0 20vw',
         margin: '2vmin',
         flexDirection: 'row',
         justifyContent: 'space-between',
       },
-      className: 'panel-1',
     },
     e(Button7, {className: 'fa-arrow-left',
       onClick: () => {
@@ -723,7 +709,7 @@ function AllLawProtected1() {
     'div',
     {
       style: {
-        height: '25vh',
+        height: 'clamp(200px, 25vh, 300px)',
         margin: '2vmin auto auto auto',
         justifyContent: 'center',
         ...border3,

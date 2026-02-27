@@ -72,7 +72,7 @@ function buildAnimeUrl(props) {
 function MainLogic() {
   //хуки
   const [isDarkTheme, setIsDarkTheme] = useState(localStorage.getItem('darkTheme') || window.matchMedia?.('(prefers-color-scheme: dark)').matches);
-  const [isActBtn, setIsActBtn] = useState('fa-sliders-h  ');
+  const [isActBtn, setIsActBtn] = useState('fa-sliders-h');
   
   //аніме
   const [isAnimeData, setIsAnimeData] = useState([]);

@@ -1,23 +1,21 @@
 let button1 = {
-  //width: '7vh',
-  //height: '7vh',
   width: 'auto',
   height: '70%',
   aspectRatio: '1/1',
   background: '#f30',
-  margin: '2vmin',
+  margin: 'clamp(5px, 2vmin, 10px)',
 };
 
 let button2 = {
-  width: '70%',
-  height: '7vh',
+  width: 'clamp(150px, 70%, 200px)',
+  height: 'clamp(35px, 5vh, 50px)',
   background: '#f30',
   margin: '2vmin',
 };
 
 let button3 = {
   width: '90%',
-  height: '7vh',
+  height: 'clamp(35px, 7vh, 50px)',
   background: '#fff',
   margin: '2vmin auto',
 };

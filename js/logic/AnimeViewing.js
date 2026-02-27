@@ -126,7 +126,7 @@ function AVSynopsisPanel() {
     'summary',
     {
       style: {
-        padding: '5vmin',
+        padding: 'clamp(10px, 5vmin, 20px)',
       },
     },
     'Опис'
