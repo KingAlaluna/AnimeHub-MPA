@@ -35,7 +35,7 @@ function ActorsGrid() {
       className: 'anime-viewing-grid-1',
     },
     e(ActorsImg2, {
-      img: c?.person?.images?.jpg?.image_url,
+      img: c?.person?.images?.webp?.image_url,
     }),
     
     e(InfoActorsPanel),
