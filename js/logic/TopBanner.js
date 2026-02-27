@@ -6,7 +6,7 @@ function TopBanner() {
         ...border1,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        height: 'clamp(60px, 10vh, 90px)',
+        height: 'clamp(60px, 10%, 90px)',
         backgroundImage: 'var(--gradient-16), linear-gradient(var(--color-fff), var(--color-fff)), var(--gradient-17)',
         boxShadow: '0 0 2.5vh 2.5vh var(--color-1)',
         zIndex: '1',

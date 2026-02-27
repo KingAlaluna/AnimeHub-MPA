@@ -5,7 +5,7 @@ function BottomBanner() {
     {
       style: {
         ...position1,
-        height: 'clamp(60px, 10vh, 90px)',
+        height: 'clamp(60px, 10%, 90px)',
         backdropFilter: 'blur(5px)',
         backgroundImage: 'var(--gradient-4)',
         flexDirection: 'row',
