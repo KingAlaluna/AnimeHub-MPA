@@ -175,7 +175,7 @@ function Actors(props) {
       e(CharactersPanel, {
         key: index,
         
-        img: v?.person?.images?.webp?.image_url,
+        img: v?.person?.images?.jpg?.image_url,
         
         name: v?.person?.name ? `Ім'я: ${v?.person?.name}` : `Ім'я: невідомо`,
         role: v?.language ? `Мова: ${v?.language}` : `Мова: невідомо`,
