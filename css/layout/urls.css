@@ -1,0 +1,20 @@
+.url-1, .url-2 {
+  margin: 1vmin;
+  padding: 1vmin;
+  width: max-content;
+  height: max-content;
+  max-width: 95%;
+  word-break: break-word;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f30;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap';
+}
+
+.url-2 {
+  margin: 1vmin 5%;
+  width: 90%;
+}
+

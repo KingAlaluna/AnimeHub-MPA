@@ -1,0 +1,66 @@
+* {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  color: var(--color-000);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+html, body, div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  position: relative;
+}
+
+button {
+  border-radius: var(--radius);
+  border: none;
+  background: var(--gradient-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border: none;
+}
+
+
+.fa-solid {
+  font-size: 2rem;
+}
+.fa-solid-1 {
+  font-size: 90%;
+}
+
+
+.fa-solid:hover {
+  animation: button-active-1 0.7s ease;
+}
+
+@keyframes button-active-1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.70);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+

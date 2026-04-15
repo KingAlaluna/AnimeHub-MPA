@@ -6,12 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Тут детальна інформація про будь-якого персонажа з будь-якого аніме, + інформація про всіх акторів/актрис озвучки персонажа! В AnimeHub доступна будь-яка інформація!">
   <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
-
-
+  <link rel="icon" href="img/my-logo/logo.svg" type="image/svg+xml">
   <title>Персонаж інформація</title>
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="main-style.css">
+  
+  
+  <!-- styles -->
+  <link rel="stylesheet" href="css/themes/general.css">
+  <link rel="stylesheet" href="css/themes/light.css">
+  <link rel="stylesheet" href="css/themes/dark.css">
+  
+  <link rel="stylesheet" href="css/utils.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  
+  
+  <!--templates-->
+  <link rel="stylesheet" href="css/templates/grids.css">
+  <link rel="stylesheet" href="css/templates/borders.css">
+  <link rel="stylesheet" href="css/templates/btns.css">
+  <link rel="stylesheet" href="css/templates/positions.css">
+  <link rel="stylesheet" href="css/templates/titles.css">
+  
+  
+  <!--layout-->
+  <link rel="stylesheet" href="css/layout/animes.css">
+  <link rel="stylesheet" href="css/layout/btns.css">
+  <link rel="stylesheet" href="css/layout/characters.css">
+  <link rel="stylesheet" href="css/layout/filters.css">
+  <link rel="stylesheet" href="css/layout/footer-copy.css">
+  <link rel="stylesheet" href="css/layout/paginations.css">
+  <link rel="stylesheet" href="css/layout/anime-lists.css">
+  <link rel="stylesheet" href="css/layout/texts.css">
+  <link rel="stylesheet" href="css/layout/urls.css">
+  
+  
+  <!--general-->
+  <link rel="stylesheet" href="css/main-banner.css">
+  <link rel="stylesheet" href="css/bottom-nav.css">
+  <link rel="stylesheet" href="css/root.css">
+  
+  
+  <!--pages-->
+  <link rel="stylesheet" href="css/pages/general.css">
+  <link rel="stylesheet" href="css/pages/anime-view.css">
+  <link rel="stylesheet" href="css/pages/info-persons.css">
+  
   
   <!--бібліотеки-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,40 +62,21 @@
 </head>
 
 <body>
-  <div id="weblite">
+  <script>
+  window.onerror = function(message, source, lineno, colno, error) {
+    console.error("КРИТИЧЕСКАЯ ОШИБКА:", message, "в файле:", source);
+    return false; // Позволяет ошибке вылетать в консоль дальше
+  };
+
+  window.onunhandledrejection = function(event) {
+    console.error("ПРОМИС СДОХ:", event.reason);
+  };
+</script>
+
+  <div id="root">
     
   </div>
   
-  
-  <!--react-->
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  
-  
-  <!--data-->
-  <script src="js/data/initialState.js"></script>
-  <script src="js/data/styleSample.js"></script>
-  <script src="js/data/componentsInterface.js"></script>
-  
-  
-  <!--logic-->
-  <script src="js/logic/TopBanner.js"></script>
-  <script src="js/logic/Website.js"></script>
-  <script src="js/logic/BottomBanner.js"></script>
-  <script src="js/logic/InfoCharacters.js"></script>
-  
-  
-<!--sw.js-->
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', async () => {
-      try {
-        const reg = await navigator.serviceWorker.register('sw.js');
-      } catch (err) {
-        console.error('Помилка SW:', err);
-      }
-    });
-  }
-</script>
+  <script type="module" src="js/logic/pages/info-characters.js"></script>
 </body>
 </html>

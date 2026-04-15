@@ -1,0 +1,54 @@
+.panel-anime-list {
+  background-image: var(--gradient-2), var(--gradient-17);
+  height: max-content;
+}
+
+
+.wrap-anime-list {
+  height: max-content;
+  display: grid;
+  grid-template: auto / repeat(var(--columns), 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  align-items: start;
+  
+  .anime-wrap {
+    cursor: pointer;
+    background-image: linear-gradient(var(--color-fff), var(--color-fff)), var(--gradient-18);
+    border-radius: var(--radius);
+    
+    .info-wrap {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(20px);
+      
+      .btn-wrap {
+        flex-direction: row;
+        height: max-content;
+      }
+    }
+    
+    &:hover {
+      .info-wrap {
+        display: flex;
+      }
+    }
+  }
+  
+  &.row {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0;
+    width: calc(100% - 2rem);
+    
+    .anime-wrap {
+      width: calc((100% - ((var(--columns) - 1) * 1rem)) / var(--columns));
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+  }
+}

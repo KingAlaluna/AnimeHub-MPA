@@ -1,0 +1,24 @@
+.btn-1 {
+  width: auto;
+  height: 3rem;
+  aspect-ratio: 1/1;
+}
+
+
+.btn-2 {
+  width: 12rem;
+  max-width: var(--max-width);
+  height: 3rem;
+  margin: 2rem;
+}
+
+
+.btn-3 {
+  min-width: max-content;
+  width: 3rem;
+  max-width: var(--max-width);
+  height: 3rem;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+}
+

@@ -1,0 +1,16 @@
+.l-btn-1 {
+  font-size: 1.5rem;
+  height: max-content;
+  min-height: 2rem;
+  width: 2rem;
+}
+
+
+.l-btn-2 {
+  padding: clamp(5px, 1vmin, 10px);
+  min-height: clamp(35px, 5vh, 50px);
+  height: auto;
+  max-height: max-content;
+}
+
+

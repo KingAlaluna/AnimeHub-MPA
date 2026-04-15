@@ -1,0 +1,7 @@
+.pagination-1 {
+  height: clamp(60px, 10vh, 90px);
+  padding: 0 20vw;
+  margin: 2vmin;
+  flex-direction: row;
+  justify-content: space-between;
+}

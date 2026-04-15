@@ -1,0 +1,17 @@
+.bottom-nav {
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  height: 4rem;
+  backdrop-filter: blur(20px);
+  display: var(--bottom-nav);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  gap: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}

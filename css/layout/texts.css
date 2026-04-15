@@ -1,0 +1,45 @@
+.text-1 {
+  margin: 3vmin;
+}
+
+
+.text-2 {
+  margin: 1vmin;
+  padding: 1vmin;
+  width: max-content;
+  height: max-content;
+  max-width: 95%;
+  word-break: break-word;
+  border-radius: 10px;
+}
+
+
+.text-3 {
+  margin: 1vmin 5%;
+  word-break: break-word;
+  display: block;
+  height: max-content;
+  width: 90%;
+  font-family: Oswald, sans-serif;
+}
+
+
+.text-4 {
+  padding: 1vmin;
+  width: max-content;
+  height: max-content;
+  position: absolute;
+}
+
+
+.text-5 {
+  margin: 1vmin 5%;
+  padding: 1vmin;
+  word-break: break-word;
+  display: block;
+  height: max-content;
+  width: 90%;
+  border-radius: 10px;
+}
+
+

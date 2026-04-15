@@ -1,0 +1,5 @@
+.page {
+  background-image: var(--gradient-1);
+  height: max-content;
+  min-height: 100%;
+}

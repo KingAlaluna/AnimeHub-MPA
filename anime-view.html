@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AnimeHub — це сучасний онлайн-каталог аніме, що працює на базі Jikan API (офіційний сервіс MyAnimeList). Це головна сторінка сайту на якій завжди є актуальна інформація про топ аніме, популярні серіали, новинки, рекомендації, та інше. Переглядайте актуальні аніме на AnimeHub!">
+  <meta name="description" content="Тут детальна інформація про будь-яке аніме. Крім стандартної інформації є ще й інформація про всіх персонажів аніме, тому що в AnimeHub не тільки приємний дизайн, а ще й приємні можливості!">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="img/my-logo/logo.svg" type="image/svg+xml">
-  <title>Головна</title>
+  <title>Аніме дивитись</title>
   
   
   <!-- styles -->
@@ -62,7 +62,7 @@
 </head>
 
 <body>
-<script>
+  <script>
   window.onerror = function(message, source, lineno, colno, error) {
     console.error("КРИТИЧЕСКАЯ ОШИБКА:", message, "в файле:", source);
     return false; // Позволяет ошибке вылетать в консоль дальше
@@ -73,32 +73,11 @@
   };
 </script>
 
-  
   <div id="root">
     
   </div>
   
   
-  <!--preact--
-  <script defer src="https://unpkg.com/preact@10.20.1/dist/preact.min.js"></script>
-  <script defer src="https://unpkg.com/preact@10.20.1/hooks/dist/hooks.umd.js"></script>
-  
-  
-  <!--data--
-  <script defer src="js/data/initialState.js"></script>
-  <script defer src="js/data/styleSample.js"></script>
-  <script defer src="js/data/componentsInterface.js"></script>
-  
-  
-  <!--logic--
-  <script defer src="js/logic/TopBanner.js"></script>
-  <script defer src="js/logic/Website.js"></script>
-  <script defer src="js/logic/BottomBanner.js"></script>
-  <script defer src="js/logic/Main.js"></script>
-  -->
-  
-  
-  <script type="module" src="js/logic/pages/main.js"></script>
-  
+  <script type="module" src="js/logic/pages/anime-view.js"></script>
 </body>
 </html>

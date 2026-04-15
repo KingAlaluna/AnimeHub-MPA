@@ -1,0 +1,1 @@
+import '../../sw-init.js';

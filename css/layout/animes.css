@@ -1,0 +1,32 @@
+.anime-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5/7;
+}
+
+
+.img-view {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5/7;
+  border-radius: var(--radius);
+}
+
+
+.anime-info {
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+
+.actors-grid.actors-grid,
+.characters-grid.characters-grid,
+.anime-view-grid.anime-view-grid {
+  display: grid;
+  grid-template: auto / repeat(var(--view-cols), 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}

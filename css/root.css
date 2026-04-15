@@ -1,0 +1,7 @@
+.root {
+  height: auto;
+  overflow: auto;
+  flex: 1;
+  padding: 4rem 0 0 0;
+  background-image: var(--gradient-2), var(--gradient-17);
+}

@@ -1,0 +1,50 @@
+.main-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  gap: 2rem;
+  
+  
+  .logo-panel {
+    flex-direction: row;
+    width: min-content;
+    gap: 0.5rem;
+    flex: 0 1 auto;
+    
+    .logo-img {
+      border-radius: var(--radius);
+      background-image: url(../img/my-logo/logo.svg), var(--gradient-6);
+    }
+    
+    .logo-text {
+      font-weight: 900;
+      font-family: Montserrat, sans-serif;
+      min-width: 0;
+      width: min-content;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      flex: 0 1 auto;
+    }
+  }
+  
+  .btn-panel {
+    flex-direction: row;
+    width: max-content;
+    gap: 1rem;
+    
+    .theme-btn {
+      background-image: var(--gradient-11), var(--gradient-10);
+    }
+    
+    .btn-none {
+      display: var(--btn-none);
+    }
+  }
+}

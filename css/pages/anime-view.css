@@ -1,0 +1,54 @@
+.anime-view-grid {
+  height: max-content;
+  background-image: var(--gradient-1);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  
+  .img-wrap {
+    height: max-content;
+  }
+  
+  .info-grid {
+    height: max-content;
+    width: 90%;
+    border-radius: 10px;
+    margin: 5vmin;
+    align-items: start;
+  }
+}
+
+.anime-view-synopsis {
+  border-radius: 10px;
+  width: 90%;
+  margin: 5vmin;
+  
+  .panel {
+    padding: clamp(10px, 5vmin, 20px);
+  }
+  
+  .text-wrap {
+    height: max-content;
+    padding: 5vmin;
+  }
+}
+
+
+.anime-view-trailer {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  margin: 5vmin;
+}
+
+
+.characters-wrap {
+  height: max-content;
+  margin: 5vmin;
+  background-image: var(--gradient-1);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: start;
+}

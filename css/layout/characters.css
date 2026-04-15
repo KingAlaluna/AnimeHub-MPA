@@ -1,0 +1,27 @@
+.characters-wrap.characters-wrap {
+  display: grid;
+  grid-template: auto / repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.characters-panel {
+  height: 16rem;
+  flex-direction: row;
+  border-radius: var(--radius);
+}
+
+
+.characters-img {
+  width: auto;
+  aspect-ratio: 2/3;
+}
+
+
+.characters-info {
+  width: auto;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
