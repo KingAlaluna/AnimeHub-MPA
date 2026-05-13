@@ -1,4 +1,4 @@
-import {e, s} from '../initial-state.js';
+import {e, s} from '../data/initial-state.js';
 import { 
   useState,
 } from 'https://esm.sh/preact@10.20.1/hooks';

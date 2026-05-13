@@ -1,5 +1,5 @@
-import {e, s} from '../initial-state.js';
-import {Btn7} from './buttons.js';
+import {e, s} from '../data/initial-state.js';
+import {Btn7} from './btns.js';
 import {Text2} from './texts.js';
 
 
@@ -8,9 +8,6 @@ export function Pagination1() {
   return e(
     'div',
     {
-      style: {
-        
-      },
       className: 'pagination-1',
     },
     e(Btn7, {className: 'fa-arrow-left',

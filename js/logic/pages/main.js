@@ -11,9 +11,9 @@ import {
 import {MainBanner} from '../main-banner.js';
 import {BottomNav} from '../bottom-nav.js';
 import {Root} from '../root.js';
-import {PanelAnimeList} from '../../data/layout/anime-lists.js';
-import {Pagination1} from '../../data/layout/paginations.js';
-import {AllLawProtected1} from '../../data/layout/footer-copy.js';
+import {PanelAnimeList} from '../../layout/anime-lists.js';
+import {Pagination1} from '../../layout/paginations.js';
+import {AllLawProtected1} from '../../layout/footer-copy.js';
 
 
 function Main() {

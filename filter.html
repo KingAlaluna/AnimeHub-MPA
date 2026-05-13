@@ -62,21 +62,11 @@
 </head>
 
 <body>
-<script>
-  window.onerror = function(message, source, lineno, colno, error) {
-    console.error("КРИТИЧЕСКАЯ ОШИБКА:", message, "в файле:", source);
-    return false; // Позволяет ошибке вылетать в консоль дальше
-  };
-
-  window.onunhandledrejection = function(event) {
-    console.error("ПРОМИС СДОХ:", event.reason);
-  };
-</script>
-
   <div id="root">
     
   </div>
   
+  <script src="error.js"></script>
   <script type="module" src="js/logic/pages/filters.js"></script>
 </body>
 </html>

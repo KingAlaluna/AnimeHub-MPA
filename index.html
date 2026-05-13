@@ -62,42 +62,11 @@
 </head>
 
 <body>
-<script>
-  window.onerror = function(message, source, lineno, colno, error) {
-    console.error("КРИТИЧЕСКАЯ ОШИБКА:", message, "в файле:", source);
-    return false; // Позволяет ошибке вылетать в консоль дальше
-  };
-
-  window.onunhandledrejection = function(event) {
-    console.error("ПРОМИС СДОХ:", event.reason);
-  };
-</script>
-
-  
   <div id="root">
     
   </div>
   
-  
-  <!--preact--
-  <script defer src="https://unpkg.com/preact@10.20.1/dist/preact.min.js"></script>
-  <script defer src="https://unpkg.com/preact@10.20.1/hooks/dist/hooks.umd.js"></script>
-  
-  
-  <!--data--
-  <script defer src="js/data/initialState.js"></script>
-  <script defer src="js/data/styleSample.js"></script>
-  <script defer src="js/data/componentsInterface.js"></script>
-  
-  
-  <!--logic--
-  <script defer src="js/logic/TopBanner.js"></script>
-  <script defer src="js/logic/Website.js"></script>
-  <script defer src="js/logic/BottomBanner.js"></script>
-  <script defer src="js/logic/Main.js"></script>
-  -->
-  
-  
+  <script src="error.js"></script>
   <script type="module" src="js/logic/pages/main.js"></script>
   
 </body>

@@ -1,4 +1,4 @@
-import {e, s} from '../initial-state.js';
+import {e, s} from '../data/initial-state.js';
 import {Text1} from './texts.js';
 import {AnimeWrap} from './animes.js';
 import { 

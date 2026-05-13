@@ -11,13 +11,13 @@ import {
 import {MainBanner} from '../main-banner.js';
 import {BottomNav} from '../bottom-nav.js';
 import {Root} from '../root.js';
-import {Pagination1} from '../../data/layout/paginations.js';
-import {AllLawProtected1} from '../../data/layout/footer-copy.js';
-import {Text1, Text7} from '../../data/layout/texts.js';
-import {Btn4} from '../../data/layout/buttons.js';
+import {Pagination1} from '../../layout/paginations.js';
+import {AllLawProtected1} from '../../layout/footer-copy.js';
+import {Text1, Text7} from '../../layout/texts.js';
+import {Btn4} from '../../layout/btns.js';
 //import {Anime2} from '../../data/layout/animes.js';
-import {CharactersPanel} from '../../data/layout/characters.js';
-import {Url2} from '../../data/layout/urls.js';
+import {CharactersPanel} from '../../layout/characters.js';
+import {Url2} from '../../layout/urls.js';
 
 
 function InfoCharacters() {

@@ -1,6 +1,6 @@
-import {e, s} from '../initial-state.js';
+import {e, s} from '../data/initial-state.js';
 import {Text4, Text5, Text6} from './texts.js';
-import {Btn4} from './buttons.js';
+import {Btn4} from './btns.js';
 
 
 export function AnimeWrap(props) {

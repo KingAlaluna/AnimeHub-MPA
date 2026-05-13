@@ -1,7 +1,7 @@
-import {e, s} from '../initial-state.js';
+import {e, s} from '../data/initial-state.js';
 import {Text1, Text3} from './texts.js';
-import {Btn2, BtnFilter} from './buttons.js';
-//import {} from 'module';
+import {Btn2, BtnFilter} from './btns.js';
+
 
 export function FilterSection(props) {
   return e(

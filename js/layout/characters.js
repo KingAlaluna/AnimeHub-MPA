@@ -1,4 +1,4 @@
-import {e} from '../initial-state.js';
+import {e} from '../data/initial-state.js';
 import {Text4, Text5} from './texts.js';
 import {Url1} from './urls.js';
 

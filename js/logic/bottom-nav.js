@@ -1,5 +1,5 @@
 import {e, s} from '../data/initial-state.js';
-import {Btn1, Btn7, Btn8} from '../data/layout/buttons.js';
+import {Btn1, Btn7, Btn8} from '../layout/btns.js';
 
 
 export function BottomNav() {

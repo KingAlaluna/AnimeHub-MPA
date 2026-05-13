@@ -1,4 +1,4 @@
-import {e} from '../initial-state.js';
+import {e} from '../data/initial-state.js';
 
 
 export function Url1(props) {
