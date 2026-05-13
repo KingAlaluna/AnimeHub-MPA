@@ -5,7 +5,6 @@ import {e, GlobalContext} from '../../data/initial-state.js';
 import { 
   useState,
   useEffect,
-  //useContext
 } from 'https://esm.sh/preact@10.20.1/hooks';
 
 import {MainBanner} from '../main-banner.js';

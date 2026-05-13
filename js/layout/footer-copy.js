@@ -209,7 +209,7 @@ function CopyWrap() {
       className: 'copy-wrap',
     },
     e(Logo, {src: 'img/my-logo/logo.svg', alt: 'Моє лого',}),
-    e('span', {}, '\u00A9 AnimeHub 2026 | v2.0.0-alpha.2 (MPA).',),
+    e('span', {}, '\u00A9 AnimeHub 2026 | v2.0.0-alpha.3 (MPA).',),
     
   );
 }
